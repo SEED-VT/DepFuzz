@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="sbt: com.carrotsearch:hppc:0.7.2:jar" external-system-id="SBT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

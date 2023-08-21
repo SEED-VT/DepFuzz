@@ -1,0 +1,105 @@
+airport_code,airport_name,city,coordinates_lat,coordinates_long,timezone
+YKS,"Yakutsk Airport",Yakutsk,129.77099609375,62.0932998657227,Asia/Yakutsk
+MJZ,"Mirny Airport",Mirnyj,114.039001464844,62.5346984863281,Asia/Yakutsk
+KHV,"Khabarovsk-Novy Airport",Khabarovsk,135.18800354004,48.52799987793,Asia/Vladivostok
+PKC,"Yelizovo Airport",Petropavlovsk,158.453994750977,53.1679000854492,Asia/Kamchatka
+UUS,"Yuzhno-Sakhalinsk Airport",Yuzhno-Sakhalinsk,142.718002319336,46.8886985778809,Asia/Sakhalin
+VVO,"Vladivostok International Airport",Vladivostok,132.147994995117,43.398998260498,Asia/Vladivostok
+LED,"Pulkovo Airport","St. Petersburg",30.2625007629395,59.8003005981445,Europe/Moscow
+KGD,"Khrabrovo Airport",Kaliningrad,20.5925998687744,54.8899993896484,Europe/Kaliningrad
+KEJ,"Kemerovo Airport",Kemorovo,86.1072006225586,55.2700996398926,Asia/Novokuznetsk
+CEK,"Chelyabinsk Balandino Airport",Chelyabinsk,61.5033,55.305801,Asia/Yekaterinburg
+MQF,"Magnitogorsk International Airport",Magnetiogorsk,58.7556991577148,53.3931007385254,Asia/Yekaterinburg
+PEE,"Bolshoye Savino Airport",Perm,56.021198272705,57.914501190186,Asia/Yekaterinburg
+SGC,"Surgut Airport",Surgut,73.4018020629883,61.3437004089355,Asia/Yekaterinburg
+BZK,"Bryansk Airport",Bryansk,34.176399231,53.2141990662,Europe/Moscow
+MRV,"Mineralnyye Vody Airport","Mineralnye Vody",43.081901550293,44.2251014709473,Europe/Moscow
+STW,"Stavropol Shpakovskoye Airport",Stavropol,42.1128005981445,45.1091995239258,Europe/Moscow
+ASF,"Astrakhan Airport",Astrakhan,48.0063018799,46.2832984924,Europe/Samara
+NJC,"Nizhnevartovsk Airport",Nizhnevartovsk,76.4835968017578,60.9492988586426,Asia/Yekaterinburg
+SVX,"Koltsovo Airport",Yekaterinburg,60.802700042725,56.743099212646,Asia/Yekaterinburg
+SVO,"Sheremetyevo International Airport",Moscow,37.4146,55.972599,Europe/Moscow
+VOZ,"Voronezh International Airport",Voronezh,39.2295989990234,51.8142013549805,Europe/Moscow
+VKO,"Vnukovo International Airport",Moscow,37.2615013123,55.5914993286,Europe/Moscow
+SCW,"Syktyvkar Airport",Syktyvkar,50.845100402832,61.6469993591309,Europe/Moscow
+KUF,"Kurumoch International Airport",Samara,50.16429901123,53.504901885986,Europe/Samara
+DME,"Domodedovo International Airport",Moscow,37.9062995910645,55.4087982177734,Europe/Moscow
+TJM,"Roshchino International Airport",Tyumen,65.3243026733,57.1896018982,Asia/Yekaterinburg
+GOJ,"Nizhny Novgorod Strigino International Airport","Nizhniy Novgorod",43.784000396729,56.230098724365,Europe/Moscow
+TOF,"Bogashevo Airport",Tomsk,85.208297729492,56.380298614502,Asia/Krasnoyarsk
+UIK,"Ust-Ilimsk Airport","Ust Ilimsk",102.565002441406,58.136100769043,Asia/Irkutsk
+NSK,"Norilsk-Alykel Airport",Norilsk,87.3321990966797,69.3110961914062,Asia/Krasnoyarsk
+ARH,"Talagi Airport",Arkhangelsk,40.7167015075684,64.6003036499023,Europe/Moscow
+RTW,"Saratov Central Airport",Saratov,46.0466995239258,51.564998626709,Europe/Volgograd
+NUX,"Novy Urengoy Airport","Novy Urengoy",76.5203018188477,66.0693969726562,Asia/Yekaterinburg
+NOJ,"Noyabrsk Airport",Noyabrsk,75.2699966430664,63.1833000183105,Asia/Yekaterinburg
+UCT,"Ukhta Airport",Ukhta,53.8046989440918,63.5668983459473,Europe/Moscow
+USK,"Usinsk Airport",Usinsk,57.3671989440918,66.0046997070312,Europe/Moscow
+NNM,"Naryan Mar Airport",Naryan-Mar,53.121898651123,67.6399993896484,Europe/Moscow
+PKV,"Pskov Airport",Pskov,28.3955993652344,57.7839012145996,Europe/Moscow
+KGP,"Kogalym International Airport",Kogalym,74.5337982177734,62.1903991699219,Asia/Yekaterinburg
+KJA,"Yemelyanovo Airport",Krasnoyarsk,92.493301391602,56.172901153564,Asia/Krasnoyarsk
+URJ,"Uray Airport",Uraj,64.8266983032227,60.1032981872559,Asia/Yekaterinburg
+IWA,"Ivanovo South Airport",Ivanovo,40.9407997131348,56.9393997192383,Europe/Moscow
+PYJ,"Polyarny Airport",Yakutia,112.029998779,66.4003982544,Asia/Yakutsk
+KXK,"Komsomolsk-on-Amur Airport",Komsomolsk-on-Amur,136.934005737305,50.4090003967285,Asia/Vladivostok
+DYR,"Ugolny Airport",Anadyr,177.740997314453,64.7349014282227,Asia/Anadyr
+PES,"Petrozavodsk Airport",Petrozavodsk,34.1547012329102,61.8852005004883,Europe/Moscow
+KYZ,"Kyzyl Airport",Kyzyl,94.4005966186523,51.6693992614746,Asia/Krasnoyarsk
+NOZ,"Spichenkovo Airport",Novokuznetsk,86.877197265625,53.8114013671875,Asia/Novokuznetsk
+GRV,"Khankala Air Base",Grozny,45.7840995788574,43.2980995178223,Europe/Moscow
+NAL,"Nalchik Airport",Nalchik,43.6366004943848,43.5129013061523,Europe/Moscow
+OGZ,"Beslan Airport",Beslan,44.6066017151,43.2051010132,Europe/Moscow
+ESL,"Elista Airport",Elista,44.3308982849121,46.3739013671875,Europe/Moscow
+SLY,"Salekhard Airport",Salekhard,66.6110000610352,66.5907974243164,Asia/Yekaterinburg
+HMA,"Khanty Mansiysk Airport",Khanty-Mansiysk,69.0860977172852,61.0284996032715,Asia/Yekaterinburg
+NYA,"Nyagan Airport",Nyagan,65.6149978637695,62.1100006103516,Asia/Yekaterinburg
+OVS,"Sovetskiy Airport",Sovetskiy,63.6019134521484,61.3266220092773,Asia/Yekaterinburg
+IJK,"Izhevsk Airport",Izhevsk,53.4575004577637,56.8280982971191,Europe/Samara
+KVX,"Pobedilovo Airport",Kirov,49.348300933838,58.503299713135,Europe/Moscow
+NYM,"Nadym Airport",Nadym,72.6988983154297,65.4809036254883,Asia/Yekaterinburg
+NFG,"Nefteyugansk Airport",Nefteyugansk,72.6500015258789,61.1082992553711,Asia/Yekaterinburg
+KRO,"Kurgan Airport",Kurgan,65.4156036376953,55.4752998352051,Asia/Yekaterinburg
+EGO,"Belgorod International Airport",Belgorod,36.5900993347168,50.643798828125,Europe/Moscow
+URS,"Kursk East Airport",Kursk,36.2956008911133,51.7505989074707,Europe/Moscow
+LPK,"Lipetsk Airport",Lipetsk,39.5377998352051,52.7028007507324,Europe/Moscow
+VKT,"Vorkuta Airport",Vorkuta,63.9930992126465,67.4886016845703,Europe/Moscow
+UUA,"Bugulma Airport",Bugulma,52.801700592041,54.6399993896484,Europe/Moscow
+JOK,"Yoshkar-Ola Airport",Yoshkar-Ola,47.9047012329102,56.7005996704102,Europe/Moscow
+CSY,"Cheboksary Airport",Cheboksary,47.3473014831543,56.0903015136719,Europe/Moscow
+ULY,"Ulyanovsk East Airport",Ulyanovsk,48.8027000427246,54.4010009765625,Europe/Samara
+OSW,"Orsk Airport",Orsk,58.5956001281738,51.0724983215332,Asia/Yekaterinburg
+PEZ,"Penza Airport",Penza,45.0210990905762,53.1105995178223,Europe/Moscow
+SKX,"Saransk Airport",Saransk,45.2122573852539,54.125129699707,Europe/Moscow
+TBW,"Donskoye Airport",Tambow,41.482799530029,52.806098937988,Europe/Moscow
+UKX,"Ust-Kut Airport",Ust-Kut,105.730003356934,56.8567008972168,Asia/Irkutsk
+GDZ,"Gelendzhik Airport",Gelendzhik,38.0124807358,44.5820926295,Europe/Moscow
+IAR,"Tunoshna Airport",Yaroslavl,40.157398223877,57.5606994628906,Europe/Moscow
+NBC,"Begishevo Airport",Nizhnekamsk,52.0924987792969,55.5647010803223,Europe/Moscow
+ULV,"Ulyanovsk Baratayevka Airport",Ulyanovsk,48.2266998291,54.2682991028,Europe/Samara
+SWT,"Strezhevoy Airport",Strezhevoy,77.6600036621,60.709400177,Asia/Krasnoyarsk
+EYK,"Beloyarskiy Airport",Beloyarsky,66.698600769,63.6869010925,Asia/Yekaterinburg
+KLF,"Grabtsevo Airport",Kaluga,36.3666687012,54.5499992371,Europe/Moscow
+RGK,"Gorno-Altaysk Airport",Gorno-Altaysk,85.8332977295,51.9667015076,Asia/Krasnoyarsk
+KRR,"Krasnodar Pashkovsky International Airport",Krasnodar,39.170501708984,45.034698486328,Europe/Moscow
+MCX,"Uytash Airport",Makhachkala,47.6523017883301,42.8167991638184,Europe/Moscow
+KZN,"Kazan International Airport",Kazan,49.278701782227,55.606201171875,Europe/Moscow
+REN,"Orenburg Central Airport",Orenburg,55.4566993713379,51.7957992553711,Asia/Yekaterinburg
+UFA,"Ufa International Airport",Ufa,55.874401092529,54.557498931885,Asia/Yekaterinburg
+OVB,"Tolmachevo Airport",Novosibirsk,82.650703430176,55.012599945068,Asia/Novosibirsk
+CEE,"Cherepovets Airport",Cherepovets,38.0158004761,59.273601532,Europe/Moscow
+OMS,"Omsk Central Airport",Omsk,73.3105010986328,54.9669990539551,Asia/Omsk
+ROV,"Rostov-on-Don Airport",Rostov,39.8180999756,47.2582015991,Europe/Moscow
+AER,"Sochi International Airport",Sochi,39.956600189209,43.449901580811,Europe/Moscow
+VOG,"Volgograd International Airport",Volgograd,44.3455009460449,48.7825012207031,Europe/Volgograd
+BQS,"Ignatyevo Airport",Blagoveschensk,127.412002563477,50.4253997802734,Asia/Yakutsk
+GDX,"Sokol Airport",Magadan,150.720001220703,59.9109992980957,Asia/Magadan
+HTA,"Chita-Kadala Airport",Chita,113.306,52.026299,Asia/Chita
+BTK,"Bratsk Airport",Bratsk,101.697998046875,56.3706016540527,Asia/Irkutsk
+IKT,"Irkutsk Airport",Irkutsk,104.38899993896,52.268001556396,Asia/Irkutsk
+UUD,"Ulan-Ude Airport (Mukhino)",Ulan-ude,107.438003540039,51.8078002929687,Asia/Irkutsk
+MMK,"Murmansk Airport",Murmansk,32.7508010864258,68.7817001342773,Europe/Moscow
+ABA,"Abakan Airport",Abakan,91.3850021362305,53.7400016784668,Asia/Krasnoyarsk
+BAX,"Barnaul Airport",Barnaul,83.5384979248047,53.3638000488281,Asia/Krasnoyarsk
+AAQ,"Anapa Vityazevo Airport",Anapa,37.347301483154,45.002101898193,Europe/Moscow
+CNN,"Chulman Airport",Neryungri,124.91400146484,56.913898468018,Asia/Yakutsk

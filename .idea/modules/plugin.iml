@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="plugin [file:/home/ahmad/Documents/VT/project1/ProvFuzz/]" external.linked.project.path="$MODULE_DIR$/../../scalac-scoverage-plugin" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../scalac-scoverage-plugin/target/scala-2.12/classes" />
+    <output-test url="file://$MODULE_DIR$/../../scalac-scoverage-plugin/target/scala-2.12/test-classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../scalac-scoverage-plugin">
+      <sourceFolder url="file://$MODULE_DIR$/../../scalac-scoverage-plugin/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../scalac-scoverage-plugin/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../scalac-scoverage-plugin/src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../scalac-scoverage-plugin/src/test/scala" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../scalac-scoverage-plugin/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.12.15:jar" level="project" />
+    <orderEntry type="module-library">
+      <library name="sbt: unmanaged-sources-and-docs">
+        <CLASSES />
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-javadoc.jar!/" />
+          <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/orc/orc-core/1.5.5/orc-core-1.5.5-javadoc.jar!/" />
+          <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/orc/orc-mapreduce/1.5.5/orc-mapreduce-1.5.5-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/orc/orc-core/1.5.5/orc-core-1.5.5-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/orc/orc-mapreduce/1.5.5/orc-mapreduce-1.5.5-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

@@ -1,0 +1,7 @@
+target/
+dummydata/
+data_tpcds/target/
+test.png
+src/main/scala/examples/instrumented/
+src/main/scala/examples/fwa/
+graphs/
