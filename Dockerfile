@@ -1,7 +1,7 @@
 FROM amazoncorretto:8u372-al2
 
-ENV REPO_LINK=https://github.com/ahmayun/codepfuzz.git
-ENV REPO_NAME=codepfuzz
+ENV REPO_LINK=https://github.com/SEED-VT/DepFuzz.git
+ENV REPO_NAME=DepFuzz
 
 RUN yum -y update
 RUN yum install -y unzip
