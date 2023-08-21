@@ -55,9 +55,15 @@ case class SparkProgramTransformer(tree: Tree) extends Transformer {
   def attachDFOMonitor(dfo: Term): Term = {
     val Term.Apply(Term.Select(rddName, Term.Name(dfoName)), args) = dfo
     dfoName match {
-      case Constants.KEY_JOIN => s"${Constants.MAP_TRANSFORMS(Constants.KEY_JOIN)}($rddName, ${args.mkString(",")}, 0)".parse[Term].get
-      case Constants.KEY_GBK => s"${Constants.MAP_TRANSFORMS(Constants.KEY_GBK)}($rddName, 0)".parse[Term].get
-      case Constants.KEY_RBK => s"${Constants.MAP_TRANSFORMS(Constants.KEY_RBK)}($rddName)(${args.mkString(",")}, 0)".parse[Term].get
+      case Constants.KEY_JOIN =>
+        println(s"Detected operator $dfoName | Attaching monitor...")
+        s"${Constants.MAP_TRANSFORMS(Constants.KEY_JOIN)}($rddName, ${args.mkString(",")}, 0)".parse[Term].get
+      case Constants.KEY_GBK =>
+        println(s"Detected operator $dfoName | Attaching monitor...")
+        s"${Constants.MAP_TRANSFORMS(Constants.KEY_GBK)}($rddName, 0)".parse[Term].get
+      case Constants.KEY_RBK =>
+        println(s"Detected operator $dfoName | Attaching monitor...")
+        s"${Constants.MAP_TRANSFORMS(Constants.KEY_RBK)}($rddName)(${args.mkString(",")}, 0)".parse[Term].get
 //      case Constants.KEY_FILTER =>
 //        val modifiedUDF = args.updated(0, attachPredicateMonitor(args.head))
 //        Term.Apply(Term.Select(rddName, Term.Name(dfoName)), modifiedUDF)
@@ -179,20 +185,19 @@ case class SparkProgramTransformer(tree: Tree) extends Transformer {
           case Case(pat, cond, body) => Case(pat, cond, attachPredicateMonitorAtEnd(body))
         })
       case stat: Stat =>
-        println(stat)
         attachPredicateMonitorAtEnd(stat)
     }
   }
 
   def attachInfixMonitor(infix: Term.ApplyInfix): Stat = {
     val Term.ApplyInfix(lhs, Term.Name(op), _, args) = infix
-    println(op)
     val monitorName = op match {
 //      case "==" =>
 //        "monitorEq"
 //      case "!=" =>
 //        "monitorNeq"
       case ">=" =>
+        println(s"Detected operator $op | Attaching monitor...")
         "monitorGte"
 //      case "<=" =>
 //        "monitorLte"

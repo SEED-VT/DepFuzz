@@ -136,12 +136,13 @@ class ProvInfo(val depsInfo: ListBuffer[CoDepTuple], val fullToMinRowMap: mutabl
     depsInfo
       .map{
         deps =>
-          val row = deps.regions.map{case Region(ds, row, col) => s"($ds,$row,$col)"}.mkString("<=>")
-          s"(${deps.operator}, $row)"
-      }.mkString("\n----------------------------\n") ++
-      "\nMAPPING:\n" ++
-      this.fullToMinRowMap.map{case ((ds, row), nr) =>
-        s"d:$ds,r:$row => $nr\n"
-      }.mkString("\n")
+          val row = deps.regions.map{case Region(ds, row, col) => s"($ds,$row,$col)"}.mkString("{", ", ", "}")
+          s"Detected Co-Dependent Region: (${deps.operator}, $row)"
+      }.mkString("\n----------------------------\n")
+//    ++
+//      "\nMAPPING:\n" ++
+//      this.fullToMinRowMap.map{case ((ds, row), nr) =>
+//        s"d:$ds,r:$row => $nr\n"
+//      }.mkString("\n")
   }
 }

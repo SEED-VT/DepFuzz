@@ -97,12 +97,11 @@ object RunFuzzerJar {
 
     val guidance = new ProvFuzzGuidance(newInputs, codepInfo.simplify(), duration.toInt)
     val (stats, timeStartFuzz, timeEndFuzz) = NewFuzzer.FuzzMutants(program, program, guidance, outDir, compile = false)
-    reportStats(program, stats, timeStartFuzz, timeEndFuzz)
+
     println("Co-dependence Info: ")
     println(codepInfo)
-    println("====================")
-    println("Simplified")
-    println(codepInfo.simplify())
+
+    reportStats(program, stats, timeStartFuzz, timeEndFuzz)
   }
 
   def reportStats(program: ExecutableProgram, stats: FuzzStats, timeStartFuzz: Long, timeEndFuzz: Long): Unit = {
