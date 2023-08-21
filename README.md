@@ -43,3 +43,7 @@ We will show you how to run the tool for WebpageSegementation. To fuzz `WebpageS
 ./run-fuzzer.sh WebpageSegmentation 300 data/webpage_segmentation/{before,after}
 ```
 
+## 5. Observing the Output
+
+Head over to the `graphs` directory in the repository cloned on your device. You should see a Coverage vs Time graph for WebpageSegmentation.
+
