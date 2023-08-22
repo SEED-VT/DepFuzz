@@ -40,7 +40,7 @@ cd DepFuzz
 We will show you how to run the fuzzer for one of the programs in the benchmark suite: `WebpageSegementation`. 
 To fuzz `WebpageSegmentation` for 5 minutes, run:
 ```
-./run-fuzzer.sh WebpageSegmentation 300 data/webpage_segmentation/{before,after}
+./run-fuzzer.sh WebpageSegmentation 300 data/full_data/webpage_segmentation/{before,after}
 ```
 > **_Expected Observation:_** The fuzzer will start and lots of output will be seen. At the end of the 5 minutes, a Coverage vs Time graph will be generated as a `.png` file inside the `graphs` directory on your local machine (NOT the docker container). You may navigate to this directory and observe the graph. The final lines of the output should look something like this:
 > ```
