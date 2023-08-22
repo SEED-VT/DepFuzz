@@ -32,16 +32,20 @@ Navigate into the repository folder:
 ```
 cd DepFuzz
 ```
-The following is the template command for running any of the benchmark programs:
-```
-./run-fuzzer.sh <PROGRAM_NAME> <DURATION> <DATASETPATH_1> ... <DATASETPATH_N>
-```
-For `PROGRAM_NAME` you may pass in the name of any scala file under `src/main/scala/examples/benchmark/` after omitting the extension
 
-We will show you how to run the tool for WebpageSegementation. To fuzz `WebpageSegmentation` for 5 minutes, run:
+We will show you how to run the fuzzer for one of the programs in the benchmark suite: `WebpageSegementation`. 
+To fuzz `WebpageSegmentation` for 5 minutes, run:
 ```
 ./run-fuzzer.sh WebpageSegmentation 300 data/webpage_segmentation/{before,after}
 ```
+> **_Expected Observation:_** The fuzzer will start and lots of output will be seen. At the end of the 5 minutes, a Coverage vs Time graph will be generated as a `.png` file inside the `graphs` directory on your local machine (NOT the docker container). You may navigate to this directory and observe
+
+
+The following is the general template of the command above, for running any of the benchmark programs:
+```
+./run-fuzzer.sh <PROGRAM_NAME> <DURATION> <DATASETPATH_1> ... <DATASETPATH_N>
+```
+`<PROGRAM_NAME>` must be replaced with the name of any scala file under `src/main/scala/examples/benchmark/` (the `.scala` extension must be omitted from the name)
 
 ## 5. Observing the Output
 
