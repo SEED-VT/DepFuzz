@@ -59,7 +59,24 @@ The following is the general template of the command above, for running any of t
 ```
 `<PROGRAM_NAME>` must be replaced with the name of any scala file under `src/main/scala/examples/benchmark/` (the `.scala` extension must be omitted from the name)
 
-## 5. Observing the Output
+## 5. Reusability
 
-Head over to the `graphs` directory in the repository cloned on your device. You should see a Coverage vs Time graph for WebpageSegmentation.
+The system is designed in a modular fashion, and the code follows good design practices. It should be easy to use, carve out and replace any component of the fuzzing system.
+If one wants to inspect the codebase, they are recommended to start by reading `src/main/scala/runners/RunFuzzerJar.scala`. 
 
+Here is some documentation of important packages:
+
+| Package    | Description |
+| -------- | ------- |
+| `abstraction`  | Contains code for framework abstraction    |
+| `examples.benchmarks` |   Contains all the benchmark programs used in the paper   |
+| `fuzzer`    | Contains the classes of the core fuzzer |
+| `generators`    | Contains data generators for the programs |
+| `guidance`    | Contains the main mutation co-dependent mutation code for DepFuzz |
+| `monitoring`    | Contains the code for co-dependence monitors attached by DepFuzz |
+| `runners`    | Starting point for executing the fuzzer |
+| `scoverage`    | Contains the modified scoverage compiler extension to facilitate coverage capture |
+| `sparkwrapper`    | Contains classes that are a wrapper around the Spark API required for Tainting |
+| `taintedprimitives`    | Contains Tainted versions of primitive data types |
+| `transformers`    | Contains the code for automated static re-write of benchmarks |
+| `utils`    | Miscellaneous helper classes |
