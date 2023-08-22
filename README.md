@@ -41,7 +41,6 @@ To fuzz `WebpageSegmentation` for 5 minutes, run:
 > **_Expected Observation:_** The fuzzer will start and lots of output will be seen. At the end of the 5 minutes, a Coverage vs Time graph will be generated as a `.png` file inside the `graphs` directory on your local machine (NOT the docker container). You may navigate to this directory and observe the graph. The final lines of the output should look something like this:
 > ```
 > == RESULTS: DepFuzz WebpageSegmentation ===
-> failures: 
 > # of Failures: 0 (0 unique)
 > coverage progress: 38.79,70.3,76.97,80.61,86.67,87.88,88.48,94.55,95.76,96.36,96.97,97.58
 > iterations: 1382
