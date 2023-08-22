@@ -15,16 +15,8 @@ object RunFuzzerJar {
 
   def main(args: Array[String]): Unit = {
 
-    val (benchmarkName, duration, outDir, inputFiles) = if (!args.isEmpty) {
-      (args(0), args(1), args(2), args.takeRight(args.length-3))
-    } else {
-//      val name = "WebpageSegmentation"
-//      val Some(files) = Config.mapInputFilesReduced.get(name)
-//      (name, "20", s"target/depfuzz-output/$name", files)
-      val name = "FlightDistance"
-      val Some(files) = Config.mapInputFilesReduced.get(name)
-      (name, "20", s"target/depfuzz-output/$name", files)
-    }
+    val (benchmarkName, duration, outDir, inputFiles) = (args(0), args(1), args(2), args.takeRight(args.length-3))
+
 //    val Some(funFuzzable) = Config.mapFunFuzzables.get(benchmarkName)
 //    val Some(codepInfo) = Config.provInfos.get(benchmarkName)
     val outPathInstrumented = "src/main/scala/examples/instrumented"
