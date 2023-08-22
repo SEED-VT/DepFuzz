@@ -57,7 +57,7 @@ The following is the general template of the command above, for running any of t
 ```
 ./run-fuzzer.sh <PROGRAM_NAME> <DURATION> <DATASETPATH_1> ... <DATASETPATH_N>
 ```
-`<PROGRAM_NAME>` must be replaced with the name of any scala file under `src/main/scala/examples/benchmark/` (the `.scala` extension must be omitted from the name)
+`<PROGRAM_NAME>` must be replaced with the name of any scala file under `src/main/scala/examples/benchmark/` (the `.scala` extension must be omitted from the name). `<DURATION>` is the duration (in seconds) for the fuzzing campaign.
 
 ## 5. Reusability
 
