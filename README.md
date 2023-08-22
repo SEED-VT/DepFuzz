@@ -64,7 +64,7 @@ The following is the general template of the command above, for running any of t
 The system is designed in a modular fashion, and the code follows good design practices. It should be easy to use, carve out and replace any component of the fuzzing system.
 If one wants to inspect the codebase, they are recommended to start by reading `src/main/scala/runners/RunFuzzerJar.scala`. 
 
-Here is some documentation of important packages:
+Here is some documentation of important packages explained w.r.t. the paper:
 
 | Package    | Description |
 | -------- | ------- |
