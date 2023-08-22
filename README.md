@@ -23,7 +23,7 @@ docker build . -t depfuzz --no-cache
 ## 3. Running the Container
 Obtain a shell instance inside the docker container:
 ```
-docker run -v ./graphs:/DepFuzz/graphs -it depfuzz bash
+docker run -v $(pwd)/graphs:/DepFuzz/graphs -it depfuzz bash
 ```
 ## 4. Running the Fuzzer
 > **_NOTE:_** All following commands must be run on the shell instance inside the docker container
