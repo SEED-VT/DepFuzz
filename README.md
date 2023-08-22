@@ -21,6 +21,10 @@ docker build . -t depfuzz --no-cache
 > **_TROUBLESHOOTING:_** If the above command fails try restarting the docker service using: `sudo systemctl restart docker`
 
 ## 3. Running the Container
+Make a directory to be used as a shared volume:
+```
+mkdir graphs
+```
 Obtain a shell instance inside the docker container:
 ```
 docker run -v $(pwd)/graphs:/DepFuzz/graphs -it depfuzz bash
