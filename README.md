@@ -14,7 +14,7 @@ Navigate into the repository folder:
 cd DepFuzz
 ```
 Build the docker image using:
-> **_NOTE:_** Depending on how docker is configured, you may need to `sudo` this
+> **_NOTE:_** If you receive a permission denied error you will need to prefix all docker commands with `sudo`. Wether or not this is needed depends on how docker is configured on your machine.
 ```
 docker build . -t depfuzz --no-cache
 ```
