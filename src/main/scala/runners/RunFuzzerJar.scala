@@ -105,7 +105,7 @@ object RunFuzzerJar {
   }
 
   def reportStats(program: ExecutableProgram, stats: FuzzStats, timeStartFuzz: Long, timeEndFuzz: Long): Unit = {
-    val durationProbe = 0.1f // (timeEndProbe - timeStartProbe) / 1000.0
+    val durationProbe = 0.0f // (timeEndProbe - timeStartProbe) / 1000.0
     val durationFuzz = (timeEndFuzz - timeStartFuzz) / 1000.0
     val durationTotal = durationProbe + durationFuzz
 
@@ -118,11 +118,11 @@ object RunFuzzerJar {
       .toList.sortBy(_._1)
       .foreach(println)
 
-    println(s"=== RESULTS: ProvFuzz ${program.name} ===")
-    println(s"failures: ${stats.failureMap.map { case (_, (_, _, i)) => i + 1 }.toSeq.sortBy(i => i).mkString(",")}")
+    println(s"=== RESULTS: DepFuzz ${program.name} ===")
+//    println(s"Failures: ${stats.failureMap.map { case (_, (_, _, i)) => i + 1 }.toSeq.sortBy(i => i).mkString(",")}")
     println(s"# of Failures: ${stats.failures} (${stats.failureMap.keySet.size} unique)")
-    println(s"coverage progress: ${stats.plotData._2.map(limitDP(_, 2)).mkString(",")}")
-    println(s"iterations: ${Global.iteration}")
+    println(s"Coverage progress: ${stats.plotData._2.map(limitDP(_, 2)).mkString(",")}")
+    println(s"Iterations: ${Global.iteration}")
     println(s"Total Time (s): ${limitDP(durationTotal, 2)} (P: $durationProbe | F: $durationFuzz)")
   }
 
