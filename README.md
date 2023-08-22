@@ -42,7 +42,7 @@ To fuzz `WebpageSegmentation` for 5 minutes, run:
 ```
 ./run-fuzzer.sh WebpageSegmentation 300 data/full_data/webpage_segmentation/{before,after}
 ```
-> **_Expected Observation:_** The fuzzer will start and lots of output will be seen. At the end of the 5 minutes, a Coverage vs Time graph will be generated as a `.png` file inside the `graphs` directory on your local machine (NOT the docker container). You may navigate to this directory and observe the graph. The final lines of the output should look something like this:
+> **_Expected Observation:_** The fuzzer will start and lots of output will be seen. Most of this is the output of the program that is being fuzzed. At the end of the 5 minutes, a Coverage vs Time graph will be generated as a `.png` file inside the `graphs` directory on your local machine (NOT the docker container). You may navigate to this directory and observe the graph. The final lines of the output should look something like this:
 > ```
 > == RESULTS: DepFuzz WebpageSegmentation ===
 > # of Failures: 0 (0 unique)
