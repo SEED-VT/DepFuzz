@@ -14,7 +14,7 @@ Navigate into the repository folder:
 cd DepFuzz
 ```
 Build the docker image using:
-> **_NOTE:_** Depending on how docker is configured, you may need to `sudo` this
+> **_NOTE:_** If you receive a permission denied error you will need to prefix all docker commands with `sudo`. Wether or not this is needed depends on how docker is configured on your machine. A docker vulnerability warning at the end is okay and will not be an issue.
 ```
 docker build . -t depfuzz --no-cache
 ```
@@ -40,9 +40,9 @@ cd DepFuzz
 We will show you how to run the fuzzer for one of the programs in the benchmark suite: `WebpageSegementation`. 
 To fuzz `WebpageSegmentation` for 5 minutes, run:
 ```
-./run-fuzzer.sh WebpageSegmentation 300 data/webpage_segmentation/{before,after}
+./run-fuzzer.sh WebpageSegmentation 300 data/full_data/webpage_segmentation/{before,after}
 ```
-> **_Expected Observation:_** The fuzzer will start and lots of output will be seen. At the end of the 5 minutes, a Coverage vs Time graph will be generated as a `.png` file inside the `graphs` directory on your local machine (NOT the docker container). You may navigate to this directory and observe the graph. The final lines of the output should look something like this:
+> **_Expected Observation:_** The fuzzer will start and lots of output will be seen. Most of this is the output of the program that is being fuzzed. At the end of the 5 minutes, a Coverage vs Time graph will be generated as a `.png` file inside the `graphs` directory on your local machine (NOT the docker container). You may navigate to this directory and observe the graph. The final lines of the output should look something like this:
 > ```
 > == RESULTS: DepFuzz WebpageSegmentation ===
 > # of Failures: 0 (0 unique)
@@ -57,7 +57,7 @@ The following is the general template of the command above, for running any of t
 ```
 ./run-fuzzer.sh <PROGRAM_NAME> <DURATION> <DATASETPATH_1> ... <DATASETPATH_N>
 ```
-`<PROGRAM_NAME>` must be replaced with the name of any scala file under `src/main/scala/examples/benchmark/` (the `.scala` extension must be omitted from the name)
+`<PROGRAM_NAME>` must be replaced with the name of any scala file under `src/main/scala/examples/benchmark/` (the `.scala` extension must be omitted from the name). `<DURATION>` is the duration (in seconds) for the fuzzing campaign.
 
 ## 5. Reusability
 
