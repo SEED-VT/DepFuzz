@@ -107,8 +107,12 @@ object Monitors extends Serializable {
       if (tupleAcc != null) {
         if (bool) {
           (prov._1.head, prov._2.head) match {
-            case (lhs: TaintedBase, rhs: TaintedBase) => tupleAcc.add((">=", ListBuffer(lhs.getProvenance(), rhs.getProvenance()), id))
-            case (lhs: TaintedBase, _) => tupleAcc.add((">=", ListBuffer(lhs.getProvenance()), id))
+            case (lhs: TaintedBase, rhs: TaintedBase) =>
+              tupleAcc.add((">=", ListBuffer(lhs.getProvenance(), rhs.getProvenance()), id))
+              this.provInfo.update(Operator(">="), ListBuffer(lhs.getProvenance(), rhs.getProvenance()), id)
+            case (lhs: TaintedBase, _) =>
+              this.provInfo.update(Operator("=="), ListBuffer(lhs.getProvenance()), id)
+              tupleAcc.add((">=", ListBuffer(lhs.getProvenance()), id))
             case _ =>
           }
         }

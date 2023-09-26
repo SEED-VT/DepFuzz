@@ -44,7 +44,7 @@ object Customers extends Serializable {
       }
     val grouped = joined.groupByKey()
     val numpur = grouped.mapValues{iter => iter.size}
-    val thresh = numpur.filter(_._2 >= 3)
+    val thresh = numpur.filter(arg1 => arg1._2 >= 3)
     val top = thresh.sortBy(_._2, false).take(3)
     if(top.length < 3) {
       println("not enough data")

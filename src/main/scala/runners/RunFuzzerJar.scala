@@ -85,7 +85,7 @@ object RunFuzzerJar {
       _ => Unit
     )
     val minDataPath = s"$outDir/minimized_data"
-    val newInputs = codepInfo.minData.map {case (i, e) => writeToFile(minDataPath, e, i)}.toArray.sorted
+    val newInputs = if(codepInfo.minData.nonEmpty) codepInfo.minData.map {case (i, e) => writeToFile(minDataPath, e, i)}.toArray.sorted else inputFiles.zipWithIndex.map{case (ds,i) => writeToFile(minDataPath, sc.textFile(ds).takeSample(false, 5).to[ListBuffer],i)}
 
     val guidance = new ProvFuzzGuidance(newInputs, codepInfo.simplify(), duration.toInt)
     val (stats, timeStartFuzz, timeEndFuzz) = NewFuzzer.FuzzMutants(program, program, guidance, outDir, compile = false)

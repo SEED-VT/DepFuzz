@@ -304,7 +304,7 @@ class ProvFuzzGuidance(val inputFiles: Array[String], val provInfo: ProvInfo, va
 
   def duplicateRow(datasets: Array[Seq[String]], loc: (Int, Int)): (Array[Seq[String]], (Int, Int)) = {
     val (ds, row) = loc
-    println(s"=> d:$ds r:$row")
+    println(s"=> d:$ds r:$row ${datasets.length}")
     (datasets.updated(ds, datasets(ds) :+ datasets(ds)(row)), (ds, datasets(ds).length))
   }
 

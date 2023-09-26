@@ -4,10 +4,9 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 object FindSalary {
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf()
-    if (args.length < 2) throw new IllegalArgumentException("Program was called with too few args")
-    //    conf.setMaster(args(1))
-    conf.setAppName("FindSalary")
+    val conf = new SparkConf().setMaster(if (args.length > 1) args(1) else "local[*]")
+    conf.setMaster("local[*]")
+    conf.setAppName("Find Salary")
     val sc = SparkContext.getOrCreate(conf)
     val data = sc.textFile(args(0))
       .map(_.split(","))

@@ -31,6 +31,8 @@ case class CoDepTuple(operator: Operator, regions: ListBuffer[Region]) {
 //depsInfo: [[(ds, col, row), (ds, col, row)], [(ds, col, row)] .... [(ds, col, row)]]
 class ProvInfo(val depsInfo: ListBuffer[CoDepTuple], val fullToMinRowMap: mutable.Map[(Int, Int), Int] = new mutable.HashMap()) extends Serializable {
 
+
+
   val minData: mutable.Map[Int, ListBuffer[String]] = new mutable.HashMap()
 
 //  def update(id: Int, provenances: ListBuffer[Provenance]): Unit = {
@@ -101,6 +103,10 @@ class ProvInfo(val depsInfo: ListBuffer[CoDepTuple], val fullToMinRowMap: mutabl
     new ProvInfo(ListBuffer(Random.shuffle(depsInfo).head), fullToMinRowMap)
   }
 
+  def getStub: ProvInfo = {
+    new ProvInfo(ListBuffer(CoDepTuple(Operator("=="),ListBuffer(Region(0,0,0)))), fullToMinRowMap)
+  }
+
   def getCoDependentRegions: ListBuffer[CoDepTuple] = { depsInfo }
 
 
@@ -128,7 +134,8 @@ class ProvInfo(val depsInfo: ListBuffer[CoDepTuple], val fullToMinRowMap: mutabl
   }
 
   def simplify(): ProvInfo = {
-    new ProvInfo(_simplify(depsInfo), fullToMinRowMap)
+    val pi = new ProvInfo(_simplify(depsInfo), fullToMinRowMap)
+    if (pi.depsInfo.isEmpty) getStub else pi
   }
 
   override def toString: String = {

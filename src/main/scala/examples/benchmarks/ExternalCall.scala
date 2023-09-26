@@ -6,10 +6,9 @@ import scala.math.log10
 
 object ExternalCall extends Serializable {
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf()
-    if (args.length < 2) throw new IllegalArgumentException("Program was called with too few args")
-    //    conf.setMaster(args(1))
-    conf.setAppName("ExternalCall")
+    val conf = new SparkConf().setMaster(if (args.length > 1) args(1) else "local[*]")
+    conf.setMaster("local[*]")
+    conf.setAppName("External Call")
     val sc = SparkContext.getOrCreate(conf)
     val rdd = sc.textFile(args(0))
       .map(_.split("\\s"))
@@ -17,16 +16,12 @@ object ExternalCall extends Serializable {
       .map { s =>
         (s, 1)
       }
-    rdd.reduceByKey(sum)
+    rdd.reduceByKey((a, b) => a + b)
       .filter { v =>
         val v1 = log10(v._2)
         v1 > 1
       }.take(5)
       .foreach(println)
-  }
-
-  def sum(a: Int, b: Int): Int = {
-    a + b
   }
 
 }
